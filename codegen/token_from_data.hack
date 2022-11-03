@@ -1,7 +1,7 @@
 /**
  * This file is generated. Do not modify it manually!
  *
- * @generated SignedSource<<4978deeca1ca80509cdf59832edc22ab>>
+ * @generated SignedSource<<7d078c309d4c59beeb06f60355a04722>>
  */
 namespace Facebook\HHAST\__Private;
 use namespace Facebook\HHAST;
@@ -55,20 +55,16 @@ final class TokenClassMap {
     'ctx' => HHAST\CtxToken::class,
     'darray' => HHAST\DarrayToken::class,
     'default' => HHAST\DefaultToken::class,
-    'define' => HHAST\DefineToken::class,
     'dict' => HHAST\DictToken::class,
     'do' => HHAST\DoToken::class,
     'double' => HHAST\DoubleToken::class,
     'echo' => HHAST\EchoToken::class,
     'else' => HHAST\ElseToken::class,
     'empty' => HHAST\EmptyToken::class,
-    'endfor' => HHAST\EndforToken::class,
-    'endforeach' => HHAST\EndforeachToken::class,
     'endif' => HHAST\EndifToken::class,
-    'endswitch' => HHAST\EndswitchToken::class,
-    'endwhile' => HHAST\EndwhileToken::class,
     'enum' => HHAST\EnumToken::class,
     'eval' => HHAST\EvalToken::class,
+    'exports' => HHAST\ExportsToken::class,
     'extends' => HHAST\ExtendsToken::class,
     'fallthrough' => HHAST\FallthroughToken::class,
     'file' => HHAST\FileToken::class,
@@ -77,11 +73,11 @@ final class TokenClassMap {
     'float' => HHAST\FloatToken::class,
     'for' => HHAST\ForToken::class,
     'foreach' => HHAST\ForeachToken::class,
-    'from' => HHAST\FromToken::class,
     'function' => HHAST\FunctionToken::class,
     'global' => HHAST\GlobalToken::class,
     'if' => HHAST\IfToken::class,
     'implements' => HHAST\ImplementsToken::class,
+    'imports' => HHAST\ImportsToken::class,
     'include' => HHAST\IncludeToken::class,
     'include_once' => HHAST\Include_onceToken::class,
     'inout' => HHAST\InoutToken::class,
@@ -105,6 +101,7 @@ final class TokenClassMap {
     'noreturn' => HHAST\NoreturnToken::class,
     'null' => HHAST\NullLiteralToken::class,
     'num' => HHAST\NumToken::class,
+    'package' => HHAST\PackageToken::class,
     'parent' => HHAST\ParentToken::class,
     'print' => HHAST\PrintToken::class,
     'private' => HHAST\PrivateToken::class,

@@ -1,7 +1,7 @@
 /**
  * This file is generated. Do not modify it manually!
  *
- * @generated SignedSource<<bc51db5a16a95311293731c4762d1aeb>>
+ * @generated SignedSource<<ccf23dc2810992f9eadf40a0131442d6>>
  */
 namespace Facebook\HHAST\__Private;
 use namespace Facebook\HHAST;
@@ -128,7 +128,10 @@ function node_from_json_unwrapped(
     'methodish_declaration' => HHAST\MethodishDeclaration::class,
     'methodish_trait_resolution' => HHAST\MethodishTraitResolution::class,
     'module_declaration' => HHAST\ModuleDeclaration::class,
+    'module_exports' => HHAST\ModuleExports::class,
+    'module_imports' => HHAST\ModuleImports::class,
     'module_membership_declaration' => HHAST\ModuleMembershipDeclaration::class,
+    'module_name' => HHAST\ModuleName::class,
     'namespace_body' => HHAST\NamespaceBody::class,
     'namespace_declaration' => HHAST\NamespaceDeclaration::class,
     'namespace_declaration_header' => HHAST\NamespaceDeclarationHeader::class,
@@ -141,6 +144,9 @@ function node_from_json_unwrapped(
     'nullable_type_specifier' => HHAST\NullableTypeSpecifier::class,
     'object_creation_expression' => HHAST\ObjectCreationExpression::class,
     'old_attribute_specification' => HHAST\OldAttributeSpecification::class,
+    'package_declaration' => HHAST\PackageDeclaration::class,
+    'package_includes' => HHAST\PackageIncludes::class,
+    'package_uses' => HHAST\PackageUses::class,
     'parameter_declaration' => HHAST\ParameterDeclaration::class,
     'parenthesized_expression' => HHAST\ParenthesizedExpression::class,
     'pipe_variable' => HHAST\PipeVariableExpression::class,

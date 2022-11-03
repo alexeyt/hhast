@@ -1,18 +1,18 @@
 /**
  * This file is generated. Do not modify it manually!
  *
- * @generated SignedSource<<188dbb98a6c56a101757fe160f5b3d4a>>
+ * @generated SignedSource<<b809a97820c1205d9407ce42b6cb74f3>>
  */
 namespace Facebook\HHAST;
 
-final class EndswitchToken extends TokenWithVariableText {
+final class ExportsToken extends TokenWithVariableText {
 
-  const string KIND = 'endswitch';
+  const string KIND = 'exports';
 
   public function __construct(
     ?NodeList<Trivia> $leading,
     ?NodeList<Trivia> $trailing,
-    string $token_text = 'endswitch',
+    string $token_text = 'exports',
     ?__Private\SourceRef $source_ref = null,
   ) {
     parent::__construct($leading, $trailing, $token_text, $source_ref);
