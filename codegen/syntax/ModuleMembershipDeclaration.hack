@@ -1,7 +1,7 @@
 /**
  * This file is generated. Do not modify it manually!
  *
- * @generated SignedSource<<e404da06ee7706b8c7dd7147fd33595a>>
+ * @generated SignedSource<<30ce5c85ba4149a8bac7eb3b682dea3e>>
  */
 namespace Facebook\HHAST;
 use namespace Facebook\TypeAssert;
@@ -15,12 +15,12 @@ final class ModuleMembershipDeclaration extends Node {
   const string SYNTAX_KIND = 'module_membership_declaration';
 
   private ModuleToken $_module_keyword;
-  private NameToken $_name;
+  private ModuleName $_name;
   private SemicolonToken $_semicolon;
 
   public function __construct(
     ModuleToken $module_keyword,
-    NameToken $name,
+    ModuleName $name,
     SemicolonToken $semicolon,
     ?__Private\SourceRef $source_ref = null,
   ) {
@@ -53,7 +53,7 @@ final class ModuleMembershipDeclaration extends Node {
       $file,
       $offset,
       $source,
-      'NameToken',
+      'ModuleName',
     );
     $name = $name as nonnull;
     $offset += $name->getWidth();
@@ -108,7 +108,7 @@ final class ModuleMembershipDeclaration extends Node {
     }
     return new static(
       $module_keyword as ModuleToken,
-      $name as NameToken,
+      $name as ModuleName,
       $semicolon as SemicolonToken,
     );
   }
@@ -146,7 +146,7 @@ final class ModuleMembershipDeclaration extends Node {
     return $this->_name;
   }
 
-  public function withName(NameToken $value): this {
+  public function withName(ModuleName $value): this {
     if ($value === $this->_name) {
       return $this;
     }
@@ -158,16 +158,16 @@ final class ModuleMembershipDeclaration extends Node {
   }
 
   /**
-   * @return NameToken
+   * @return ModuleName
    */
-  public function getName(): NameToken {
-    return TypeAssert\instance_of(NameToken::class, $this->_name);
+  public function getName(): ModuleName {
+    return TypeAssert\instance_of(ModuleName::class, $this->_name);
   }
 
   /**
-   * @return NameToken
+   * @return ModuleName
    */
-  public function getNamex(): NameToken {
+  public function getNamex(): ModuleName {
     return $this->getName();
   }
 
