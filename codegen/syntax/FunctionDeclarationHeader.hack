@@ -1,7 +1,7 @@
 /**
  * This file is generated. Do not modify it manually!
  *
- * @generated SignedSource<<24665462d5c5e66ed6bc35d92fc9b6b1>>
+ * @generated SignedSource<<35b1aac763c199d6762a35516e8913ac>>
  */
 namespace Facebook\HHAST;
 use namespace Facebook\TypeAssert;
@@ -24,7 +24,7 @@ final class FunctionDeclarationHeader extends Node {
   private ?Contexts $_contexts;
   private ?ColonToken $_colon;
   private ?ReadonlyToken $_readonly_return;
-  private ?ITypeSpecifier $_type;
+  private ?Node $_type;
   private ?WhereClause $_where_clause;
 
   public function __construct(
@@ -38,7 +38,7 @@ final class FunctionDeclarationHeader extends Node {
     ?Contexts $contexts,
     ?ColonToken $colon,
     ?ReadonlyToken $readonly_return,
-    ?ITypeSpecifier $type,
+    ?Node $type,
     ?WhereClause $where_clause,
     ?__Private\SourceRef $source_ref = null,
   ) {
@@ -158,7 +158,7 @@ final class FunctionDeclarationHeader extends Node {
       $file,
       $offset,
       $source,
-      'ITypeSpecifier',
+      'Node',
     );
     $offset += $type?->getWidth() ?? 0;
     $where_clause = Node::fromJSON(
@@ -268,7 +268,7 @@ final class FunctionDeclarationHeader extends Node {
       $contexts as ?Contexts,
       $colon as ?ColonToken,
       $readonly_return as ?ReadonlyToken,
-      $type as ?ITypeSpecifier,
+      $type as ?Node,
       $where_clause as ?WhereClause,
     );
   }
@@ -303,9 +303,9 @@ final class FunctionDeclarationHeader extends Node {
 
   /**
    * @return NodeList<AbstractToken> | NodeList<Token> | NodeList<AsyncToken> |
-   * NodeList<FinalToken> | NodeList<InternalToken> | NodeList<PrivateToken> |
-   * NodeList<ProtectedToken> | NodeList<PublicToken> | NodeList<ReadonlyToken>
-   * | NodeList<StaticToken> | null
+   * NodeList<FinalToken> | NodeList<PrivateToken> | NodeList<ProtectedToken> |
+   * NodeList<PublicToken> | NodeList<ReadonlyToken> | NodeList<StaticToken> |
+   * null
    */
   public function getModifiers(): ?NodeList<Token> {
     return $this->_modifiers;
@@ -313,9 +313,8 @@ final class FunctionDeclarationHeader extends Node {
 
   /**
    * @return NodeList<AbstractToken> | NodeList<Token> | NodeList<AsyncToken> |
-   * NodeList<FinalToken> | NodeList<InternalToken> | NodeList<PrivateToken> |
-   * NodeList<ProtectedToken> | NodeList<PublicToken> | NodeList<ReadonlyToken>
-   * | NodeList<StaticToken>
+   * NodeList<FinalToken> | NodeList<PrivateToken> | NodeList<ProtectedToken> |
+   * NodeList<PublicToken> | NodeList<ReadonlyToken> | NodeList<StaticToken>
    */
   public function getModifiersx(): NodeList<Token> {
     return TypeAssert\not_null($this->getModifiers());
@@ -707,7 +706,7 @@ final class FunctionDeclarationHeader extends Node {
     return $this->_type;
   }
 
-  public function withType(?ITypeSpecifier $value): this {
+  public function withType(?Node $value): this {
     if ($value === $this->_type) {
       return $this;
     }
@@ -736,10 +735,10 @@ final class FunctionDeclarationHeader extends Node {
    * ClosureTypeSpecifier | DarrayTypeSpecifier | DictionaryTypeSpecifier |
    * GenericTypeSpecifier | KeysetTypeSpecifier | LikeTypeSpecifier | null |
    * NullableTypeSpecifier | ShapeTypeSpecifier | SimpleTypeSpecifier |
-   * NoreturnToken | TupleTypeSpecifier | TypeConstant | VarrayTypeSpecifier |
-   * VectorTypeSpecifier
+   * NoreturnToken | TupleTypeSpecifier | TypeConstant | TypeRefinement |
+   * VarrayTypeSpecifier | VectorTypeSpecifier
    */
-  public function getType(): ?ITypeSpecifier {
+  public function getType(): ?Node {
     return $this->_type;
   }
 
@@ -748,10 +747,10 @@ final class FunctionDeclarationHeader extends Node {
    * ClosureTypeSpecifier | DarrayTypeSpecifier | DictionaryTypeSpecifier |
    * GenericTypeSpecifier | KeysetTypeSpecifier | LikeTypeSpecifier |
    * NullableTypeSpecifier | ShapeTypeSpecifier | SimpleTypeSpecifier |
-   * NoreturnToken | TupleTypeSpecifier | TypeConstant | VarrayTypeSpecifier |
-   * VectorTypeSpecifier
+   * NoreturnToken | TupleTypeSpecifier | TypeConstant | TypeRefinement |
+   * VarrayTypeSpecifier | VectorTypeSpecifier
    */
-  public function getTypex(): ITypeSpecifier {
+  public function getTypex(): Node {
     return TypeAssert\not_null($this->getType());
   }
 
